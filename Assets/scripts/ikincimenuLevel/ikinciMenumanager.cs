@@ -7,7 +7,7 @@ public class ikinciMenumanager : MonoBehaviour
 {
     public void hangioyunAcilsin(string hangiOyun)
     {
-        PlayerPrefs.SetString("Hangi Oyun", hangiOyun);
+        PlayerPrefs.SetString("hangiOyun", hangiOyun);
         SceneManager.LoadScene("gameLevel");
     }
 }
