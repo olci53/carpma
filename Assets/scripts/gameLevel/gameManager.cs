@@ -12,6 +12,7 @@ public class gameManager : MonoBehaviour
     float ikinciCarpan;
     float dogruSonuc;
     float birinciYanlisSonuc, ikinciYanlisSonuc;
+    float dogruAdet, yanlisAdet, toplamPuan;
     [SerializeField] private Text soruText,birinciText,ikinciText,ucuncuText;
 
     private void Start()
@@ -151,6 +152,21 @@ public class gameManager : MonoBehaviour
             birinciText.text = ikinciYanlisSonuc.ToString();
         }
             
+    }
+
+
+    public void SonucuKontrolEt(int textSonucu)
+    {
+        if (textSonucu == dogruSonuc)
+        {
+            
+        }else
+        {
+            Debug.Log("Yanlýþ Sonuç");
+        }
+
+        SoruyuYazdir();
+
     }
 
 
